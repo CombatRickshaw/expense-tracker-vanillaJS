@@ -1,4 +1,5 @@
 # expense-tracker-vanillaJS
 
-Submission for the Web Dev Task
+Submission for the ACM Web Dev Task
 
+[Link to Github Pages](https://combatrickshaw.github.io/expense-tracker-vanillaJS/)
