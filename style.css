@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+    color: #FFFFFF;
+}
+
+
+body {
+    background-color: #1C1C1C;
+}
+
+.root {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: auto;
+}
+
+#heading {
+    font-size: 48px;
+}
+
+.header {
+    margin: 15px auto;
+}
+
+.balance-container {
+    font-size: 24px;
+    margin: 0px 0px 30px 0px;
+}
+
+.balance::after {
+    content: '$';
+}
+
+#expense::after, #income::after {
+    content: '$';
+}
+
+.income-expense-container {
+    margin: 0px 0px 30px 0px;
+    display: flex;
+    box-sizing: content-box;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 5px black;
+    background-color: #FFFFFF;
+    font-size: 20px;
+}
+.income-expense-container > * {
+    padding: 20px 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.transaction-form {
+    display: grid;
+    grid-template-columns: auto;
+    margin-bottom: 0px;
+}
+
+.add-transaction {
+    margin-bottom: 0px;
+}
+
+.add-transaction > * {
+    margin-bottom: 15px;
+}
+
+.transaction-form > * {
+    margin: 5px 0px;
+}
+
+.expenses-div > * , .income-div > * {
+    color: #1C1C1C;
+}
+
+#trans-desc-input, #transaction-amount {
+    padding: 10px;
+    color: #1C1C1C;
+    font-size: 16px;
+}
+
+#add-transaction-btn {
+    cursor: pointer;
+    /* background-color: #1C1C1C; */
+    background-color: #BAD9B5;
+    color: #1C1C1C;
+    /* pink : #FD96A9 */
+    /* green : #C0C999 */
+    /* border: 0; */
+    display: block;
+    font-size: 16px;
+    margin: 10px 0 30px;
+    padding: 10px 0px;
+    padding-bottom: 10px;
+    width: 100%;
+    transition: all 0.3s ease;
+}
+
+#add-transaction-btn:hover {
+    background-color: #EFD0CA;
+    color: #1C1C1C;
+    transition: all 0.3s ease;
+}
+
+.transaction-history {
+    margin-bottom: 15px;
+}
+.transaction-list-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px auto;
+}
+
+.transaction-list-item > * {
+    padding: 10px 15px ;
+}
+
+.positive {
+    border: 2px solid white;
+    border-radius: 5px;
+    border-right: 5px solid green;
+    
+}
+
+.negative {
+    border: 2px solid white;
+    border-radius: 5px;
+    border-right: 5px solid red;
+    
+}
+
+.display-none {
+    display: none;
+}
